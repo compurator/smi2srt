@@ -193,11 +193,11 @@ class SMI2SRTHandle(object):
                             #log_debug("pass : %s", eachfile)
                             pass
                         elif eachfile[-4:].lower() == '.srt':
-                            if not SMI2SRTHandle.no_change_ko_srt:
+                            if not SMI2SRTHandle.no_change_ko_srt and not os.path.exists(eachfile.replace('.srt', '.ko.srt')):
                                 log_debug(".srt => .ko.srt : %s", eachfile)
                                 # 2020-06-15 한글이 들어있는 파일만.
                                 # 할 필요있나?..
-                                shutil.move(eachfile, eachfile.replace('.srt', '.ko.srt'))
+                                shutil.copy(eachfile, eachfile.replace('.srt', '.ko.srt'))
                 except Exception as e: 
                     log_debug('Exception:%s', e)
                     log_debug(traceback.format_exc())
