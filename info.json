@@ -2,7 +2,7 @@
     "version": "0.1.0.0",
     "name": "smi2srt",
     "category_name": "fileprocess",
-    "developer": "soju6jan",
+    "developer": "compurator",
     "description": "smi to srt 변환",
     "home": "https://github.com/compurator/smi2srt",
     "more": "",
