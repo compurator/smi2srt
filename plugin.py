@@ -38,9 +38,9 @@ plugin_info = {
     'version' : '0.1.0.0',
     'name' : u'smi2srt',
     'category_name' : 'fileprocess',
-    'developer' : 'soju6jan',
+    'developer' : 'compurator',
     'description' : u'smi to srt 변환',
-    'home' : 'https://github.com/soju6jan/smi2srt',
+    'home' : 'https://github.com/compurator/smi2srt',
     'more' : '',
 }
 
